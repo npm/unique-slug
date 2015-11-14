@@ -3,9 +3,9 @@ var crypto = require('crypto')
 
 module.exports = function (uniq) {
   if (uniq) {
-    var hash = crypto.createHash('md5')
+    var hash = crypto.createHash('sha1')
     hash.update(uniq)
-    return hash.digest('hex')
+    return hash.digest('hex').slice(0, 32)
   } else {
     // Safe because w/o a callback because this interface can
     // neither block nor error (by contrast with randomBytes
