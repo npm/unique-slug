@@ -4,7 +4,7 @@
   "description": "Generate a unique character string suitible for use in files and URLs.",
   "main": "index.js",
   "scripts": {
-    "test": "standard && tap test"
+    "test": "standard && tap --coverage test"
   },
   "keywords": [],
   "author": "Rebecca Turner <me@re-becca.org> (http://re-becca.org)",
