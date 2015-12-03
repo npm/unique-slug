@@ -16,5 +16,8 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/iarna/unique-slug.git"
+  },
+  "dependencies": {
+    "imurmurhash": "^0.1.4"
   }
 }
