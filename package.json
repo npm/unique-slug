@@ -1,6 +1,6 @@
 {
   "name": "unique-slug",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Generate a unique character string suitible for use in files and URLs.",
   "main": "index.js",
   "scripts": {
