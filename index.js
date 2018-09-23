@@ -7,8 +7,6 @@ module.exports = function (uniq) {
     var hash = new MurmurHash3(uniq)
     return ('00000000' + hash.result().toString(16)).substr(-8)
   } else {
-    // Called without a callback, because this interface usually should neither
-    // block for a noticeable time nor error.
-    return crypto.randomBytes(4).toString('hex')
+    return (Math.random().toString(16) + '0000000').substr(2, 8);
   }
 }
