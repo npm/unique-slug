@@ -1,5 +1,4 @@
 'use strict'
-var crypto = require('crypto')
 var MurmurHash3 = require('imurmurhash')
 
 module.exports = function (uniq) {
