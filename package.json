@@ -2,7 +2,7 @@
   "name": "unique-slug",
   "version": "2.0.2",
   "description": "Generate a unique character string suitible for use in files and URLs.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "tap",
     "lint": "eslint \"**/*.js\"",
@@ -19,15 +19,15 @@
   "author": "GitHub Inc.",
   "license": "ISC",
   "devDependencies": {
-    "standard": "^12.0.1",
-    "tap": "^12.7.0"
+    "@npmcli/eslint-config": "^3.1.0",
+    "@npmcli/template-oss": "3.5.0",
+    "tap": "^16.3.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/npm/unique-slug.git"
   },
   "dependencies": {
-    "@npmcli/template-oss": "3.5.0",
     "imurmurhash": "^0.1.4"
   },
   "files": [
