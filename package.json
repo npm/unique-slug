@@ -4,10 +4,19 @@
   "description": "Generate a unique character string suitible for use in files and URLs.",
   "main": "index.js",
   "scripts": {
-    "test": "standard && tap --coverage test"
+    "test": "tap",
+    "lint": "eslint \"**/*.js\"",
+    "postlint": "template-oss-check",
+    "template-oss-apply": "template-oss-apply --force",
+    "lintfix": "npm run lint -- --fix",
+    "preversion": "npm test",
+    "postversion": "npm publish",
+    "prepublishOnly": "git push origin --follow-tags",
+    "snap": "tap",
+    "posttest": "npm run lint"
   },
   "keywords": [],
-  "author": "Rebecca Turner <me@re-becca.org> (http://re-becca.org)",
+  "author": "GitHub Inc.",
   "license": "ISC",
   "devDependencies": {
     "standard": "^12.0.1",
@@ -15,9 +24,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/iarna/unique-slug.git"
+    "url": "https://github.com/npm/unique-slug.git"
   },
   "dependencies": {
+    "@npmcli/template-oss": "3.5.0",
     "imurmurhash": "^0.1.4"
+  },
+  "files": [
+    "bin/",
+    "lib/"
+  ],
+  "engines": {
+    "node": "^12.13.0 || ^14.15.0 || >=16.0.0"
+  },
+  "templateOSS": {
+    "//@npmcli/template-oss": "This file is partially managed by @npmcli/template-oss. Edits may be overwritten.",
+    "version": "3.5.0"
   }
 }
