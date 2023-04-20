@@ -1,7 +1,7 @@
 unique-slug
 ===========
 
-Generate a unique character string suitible for use in files and URLs.
+Generate a unique character string suitable for use in files and URLs.
 
 ```
 var uniqueSlug = require('unique-slug')
