@@ -1,5 +1,14 @@
 # Changelog
 
+## [6.0.0](https://github.com/npm/unique-slug/compare/v5.0.0...v6.0.0) (2025-10-22)
+### ⚠️ BREAKING CHANGES
+* `unique-slug` now supports node `^20.17.0 || >=22.9.0`
+### Bug Fixes
+* [`f5e61b3`](https://github.com/npm/unique-slug/commit/f5e61b361dbe5c8ad38cd46bf21583cf93b794ed) [#108](https://github.com/npm/unique-slug/pull/108) align to npm 11 node engine range (#108) (@owlstronaut)
+### Chores
+* [`4a4f0d8`](https://github.com/npm/unique-slug/commit/4a4f0d86ffd3e555275c07642df91597a158caa9) [#101](https://github.com/npm/unique-slug/pull/101) postinstall workflow updates (#101) (@owlstronaut)
+* [`236644c`](https://github.com/npm/unique-slug/commit/236644c77e33929ee95811dee134e593fbb201bb) [#107](https://github.com/npm/unique-slug/pull/107) bump @npmcli/template-oss from 4.26.0 to 4.27.1 (#107) (@dependabot[bot], @npm-cli-bot)
+
 ## [5.0.0](https://github.com/npm/unique-slug/compare/v4.0.0...v5.0.0) (2024-09-24)
 ### ⚠️ BREAKING CHANGES
 * `unique-slug` now supports node `^18.17.0 || >=20.5.0`
