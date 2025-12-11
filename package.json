@@ -20,8 +20,7 @@
   "license": "ISC",
   "devDependencies": {
     "@npmcli/eslint-config": "^6.0.0",
-    "@npmcli/template-oss": "4.28.1",
-    "tap": "^16.3.0"
+    "@npmcli/template-oss": "4.28.1"
   },
   "repository": {
     "type": "git",
