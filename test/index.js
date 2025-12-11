@@ -1,13 +1,33 @@
 'use strict'
-var t = require('tap')
-var uniqueSlug = require('../lib/index.js')
+const { test } = require('node:test')
+const assert = require('node:assert')
+const uniqueSlug = require('../lib/index.js')
 
-t.plan(5)
-var slugA = uniqueSlug()
-t.equal(slugA.length, 8, 'random slugs are 8 chars')
-t.not(slugA, uniqueSlug(), "two slugs aren't the same")
-var base = '/path/to/thingy'
-var slugB = uniqueSlug(base)
-t.equal(slugB.length, 8, 'string based slugs are 8 chars')
-t.equal(slugB, uniqueSlug(base), 'two string based slugs, from the same string are the same')
-t.not(slugB, uniqueSlug(slugA), 'two string based slongs, from diff strings are different')
+test('random slugs are 8 chars', () => {
+  const slugA = uniqueSlug()
+  assert.strictEqual(slugA.length, 8)
+})
+
+test("two slugs aren't the same", () => {
+  const slugA = uniqueSlug()
+  assert.notStrictEqual(slugA, uniqueSlug())
+})
+
+test('string based slugs are 8 chars', () => {
+  const base = '/path/to/thingy'
+  const slugB = uniqueSlug(base)
+  assert.strictEqual(slugB.length, 8)
+})
+
+test('two string based slugs, from the same string are the same', () => {
+  const base = '/path/to/thingy'
+  const slugB = uniqueSlug(base)
+  assert.strictEqual(slugB, uniqueSlug(base))
+})
+
+test('two string based slongs, from diff strings are different', () => {
+  const base = '/path/to/thingy'
+  const slugA = uniqueSlug()
+  const slugB = uniqueSlug(base)
+  assert.notStrictEqual(slugB, uniqueSlug(slugA))
+})
