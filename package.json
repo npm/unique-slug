@@ -26,9 +26,6 @@
     "type": "git",
     "url": "git+https://github.com/npm/unique-slug.git"
   },
-  "dependencies": {
-    "imurmurhash": "^0.1.4"
-  },
   "files": [
     "bin/",
     "lib/"
