@@ -1,5 +1,19 @@
 # Changelog
 
+## [7.0.0](https://github.com/npm/unique-slug/compare/v6.0.0...v7.0.0) (2026-05-08)
+### ⚠️ BREAKING CHANGES
+* `unique-slug` now supports node `^22.22.2 || ^24.15.0 || >=26.0.0`
+* template-oss-apply
+### Features
+* [`147f28c`](https://github.com/npm/unique-slug/commit/147f28c3bc84b5f681117130f645c03a002b1706) [#118](https://github.com/npm/unique-slug/pull/118) bump to new node engine range (@owlstronaut)
+* [`885eff3`](https://github.com/npm/unique-slug/commit/885eff3052e39861b9fba3b49a8ecef2d7996854) [#118](https://github.com/npm/unique-slug/pull/118) template-oss-apply (@owlstronaut)
+### Chores
+* [`3b31500`](https://github.com/npm/unique-slug/commit/3b31500e4e59525bcf82ef7a79afcf3fa5d6d694) [#118](https://github.com/npm/unique-slug/pull/118) template-oss-apply (@owlstronaut)
+* [`aa3a4b9`](https://github.com/npm/unique-slug/commit/aa3a4b9f1b29edee991e5ce6203327baad974e5f) [#113](https://github.com/npm/unique-slug/pull/113) remove tap (@owlstronaut)
+* [`802c1a1`](https://github.com/npm/unique-slug/commit/802c1a19fc71f9fc524c8a3921e1663fd2d07c0e) [#113](https://github.com/npm/unique-slug/pull/113) swap from tap to built-in node:test (@owlstronaut)
+* [`592577c`](https://github.com/npm/unique-slug/commit/592577ca28cc3cca9f0ead467a71674c6e6a3c06) [#110](https://github.com/npm/unique-slug/pull/110) bump @npmcli/eslint-config from 5.1.0 to 6.0.0 (#110) (@dependabot[bot])
+* [`1f55579`](https://github.com/npm/unique-slug/commit/1f5557900893c31554792a69539a77b7a40cc3b2) [#115](https://github.com/npm/unique-slug/pull/115) bump @npmcli/template-oss from 4.28.1 to 4.29.0 (#115) (@dependabot[bot], @npm-cli-bot)
+
 ## [6.0.0](https://github.com/npm/unique-slug/compare/v5.0.0...v6.0.0) (2025-10-22)
 ### ⚠️ BREAKING CHANGES
 * `unique-slug` now supports node `^20.17.0 || >=22.9.0`
